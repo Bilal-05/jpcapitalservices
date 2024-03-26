@@ -117,7 +117,7 @@ class EstimationVM extends BaseViewModel {
       platformResponse = 'success';
       navigationService.replaceWithAppointmentView(service: service!);
     } catch (error) {
-      print(error);
+      debugPrint('$error');
       platformResponse = error.toString();
       SnackbarService().showSnackbar(
         message: error.toString(),

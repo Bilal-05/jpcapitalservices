@@ -62,7 +62,7 @@ class MainMenuView extends StatelessWidget {
 
         return Scaffold(
           body: SafeArea(
-            child: Container(
+            child: SizedBox(
               child: Column(
                 children: [
                   Container(
@@ -111,6 +111,7 @@ class MainMenuView extends StatelessWidget {
                     ),
                   ),
                   Expanded(
+                    // ignore: avoid_unnecessary_containers
                     child: Container(
                       // margin: EdgeInsets.only(
                       //     top: 0.02.sh,
